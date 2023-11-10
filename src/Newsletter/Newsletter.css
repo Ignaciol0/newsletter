@@ -4,6 +4,7 @@
 --Grey: hsl(231, 7%, 60%);
 --White: hsl(0, 0%, 100%);
 --Tomato: hsl(4, 100%, 67%);
+--Red:#FF537B;
 --main-div-height:640px;
 --main-div-width:928px;
 --font-size:16px;
@@ -39,7 +40,6 @@ width: 377px;
 height: 453px;
 margin-left: 23px;
 margin-right: 63px;
-gap:0px;
 }
 h1{
 height:66px ;
@@ -49,6 +49,7 @@ font-size: 56px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 0px;
 }
 p,span{
 color: var(--Dark-Slate-Grey);
@@ -57,6 +58,12 @@ font-size: var(--font-size);
 font-style: normal;
 font-weight: 400;
 line-height: 150%;
+}
+p{
+margin-bottom: 10px;
+}
+ul{
+    margin: 10px 0;
 }
 li{
     display: flex;
@@ -73,8 +80,26 @@ width: 359px;
 height: 45px;
 flex-shrink: 0;
 }
+.input-label{
+position: relative;
+left:-20px;
+width: 377px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
 .holder{
 font-size: 12px;
+font-weight: 700;
+order: 1;
+}
+.error{
+color:var(--Tomato);
+font-size: 12px;
+font-weight: 700;
+order: 2;
+display: none;
 }
 input{
 width: 377px;
@@ -82,14 +107,19 @@ height: 56px;
 flex-shrink: 0;
 border-radius: 10px;
 border: 1px solid var(--Dark-Slate-Grey);
+box-sizing: border-box;
+padding-left: 26px;
 margin-bottom: 25px;
 }
-::placeholder{
-    position: relative;
-    left:26px;
+input:invalid{
+    border-color: var(--Tomato);
+    background:  hsl(4, 100%, 67%, 0.3);
+}
+.error:invalid{
+    display: flex;
 }
 button{
-width: 382px;
+width: 377px;
 height: 56px;
 flex-shrink: 0;
 background: var(--Dark-Slate-Grey);
@@ -97,4 +127,8 @@ border-radius: 10px;
 }
 .button-text{
     color:var(--White);
+}
+button:hover{
+background: linear-gradient(var(--Red),var(--Tomato));
+border-color: transparent;
 }

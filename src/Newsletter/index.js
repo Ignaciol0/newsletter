@@ -13,7 +13,7 @@ function Newsletter(){
                 <li><ListIcon className="icon"></ListIcon><p>Measuring to ensure updates are a success</p></li>
                 <li><ListIcon className="icon"></ListIcon><p>And much more!</p></li>
             </ul>
-            <span className='holder'>Email address</span>
+            <div className='input-label'><span className='holder'>Email address</span><span className='error'>Invalid Email</span></div>
             <input placeholder='email@company.com'></input>
             <button><span className='button-text'>Subcribe to monthly newsletter</span></button>
         </div>
