@@ -1,0 +1,66 @@
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--Red:#FF537B;
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+}
+.main{
+width: 503px;
+height: 520px;
+flex-shrink: 0;
+background: White;
+display: flex;
+justify-content: center;
+align-items: initial;
+flex-direction: column;
+position: absolute;
+border-radius: 35px;
+top: calc(50% - 260px);
+padding: 48px 63px 48px 63px;
+box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:  hsl(235, 18%, 26%);
+  }
+.icon{
+position: relative;
+left: 0;
+}
+.button{
+width: 377px;
+height: 56px;
+flex-shrink: 0;
+border-radius: 10px;
+background: var(--Dark-Slate-Grey);
+box-sizing: border-box;
+border: none;
+}
+.span{
+color: white;
+}
+.paragraph{
+width: 359px;
+height: 78px;
+flex-shrink: 0;
+color: #0E0E0E;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+.title{
+width: 315px;
+height: 112px;
+color: var(--Dark-Slate-Grey);
+font-family: Roboto;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+}
+.button:hover{
+background: linear-gradient(var(--Red),var(--Tomato));
+}
